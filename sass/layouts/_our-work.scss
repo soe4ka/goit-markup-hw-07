@@ -1,0 +1,30 @@
+.our-work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-work__item {
+  position: relative;
+}
+
+.our-work__description {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  min-height: 70px;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.our-work__title {
+  padding-top: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-white);
+}
