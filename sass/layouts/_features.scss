@@ -19,7 +19,7 @@
   padding-bottom: 25px;
   margin-bottom: 30px;
 
-  background-color: var(--secondary-white);
+  background-color: $secondary-white;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,7 +33,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .features__text {

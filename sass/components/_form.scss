@@ -5,7 +5,7 @@
   font-size: 20px;
   text-align: center;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .order-form {
@@ -35,8 +35,8 @@
   transform: translate(-50%, -50%);
 
   transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .order-form__input {
@@ -50,18 +50,19 @@
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
 
   transition-property: outline;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
 
     + .order-form__icon,
     + .order-form__icon {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }
@@ -78,13 +79,14 @@
   line-height: 1.167;
   letter-spacing: 0.01em;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
 
   transition-property: outline;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 
   resize: none;
 
@@ -98,7 +100,7 @@
 
   &:hover,
   &:focus {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
   }
 }
 
@@ -117,7 +119,7 @@
     width: 16px;
     height: 15px;
 
-    border: 2px solid var(--secondary-text-color);
+    border: 2px solid $secondary-text-color;
     border-radius: 2px;
   }
 }
@@ -127,8 +129,12 @@
   -moz-appearance: none;
   appearance: none;
 
+  transition-property: border;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+
   &:focus + .agreement__label::before {
-    border: 2px solid var(--accent-color);
+    border: 2px solid $accent-color;
     border-radius: 2px;
   }
 
@@ -136,7 +142,7 @@
     background-image: url(../images/check.svg);
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
     border-radius: 2px;
   }
 }
@@ -148,10 +154,14 @@
   line-height: 1.71;
   text-decoration-line: underline;
 
-  color: var(--accent-color);
+  color: $accent-color;
+
+  transition-property: outline;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 
   &:focus {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
     border-radius: 2px;
   }
 }

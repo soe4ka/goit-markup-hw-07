@@ -1,5 +1,5 @@
 .team-section {
-  background-color: var(--secondary-white);
+  background-color: $secondary-white;
 }
 
 .workers {
@@ -8,7 +8,7 @@
 }
 
 .workers__item {
-  background-color: var(--primary-white);
+  background-color: $primary-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -29,7 +29,7 @@
   line-height: 1.19;
   text-align: center;
 
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .workers__position {

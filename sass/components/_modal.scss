@@ -9,8 +9,8 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   transition-property: opacity, visibility;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .is-hidden {
@@ -32,15 +32,15 @@
   min-width: 528px;
   padding: 40px;
 
-  background-color: var(--primary-white);
+  background-color: $primary-white;
   border-radius: 4px;
 
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 
   transition-property: transform, opacity;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 }
 
 .close-button {
@@ -54,16 +54,16 @@
   width: 30px;
   height: 30px;
 
-  background-color: var(--primary-white);
+  background-color: $primary-white;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   transition-property: fill;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }

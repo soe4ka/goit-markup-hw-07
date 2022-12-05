@@ -11,15 +11,15 @@
   font-size: inherit;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--primary-white);
+  color: $primary-white;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border: none;
   border-radius: 4px;
 
   transition-property: box-shadow;
-  transition-duration: var(--duration);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus {
